@@ -10,26 +10,32 @@
 <body>
     <header class="bg-[#0F172A] text-white shadow-lg">
     <nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Global">
-        <div class="flex h-20 items-center justify-between">
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5 text-2xl font-black tracking-tighter text-yellow-400 uppercase">
-                    CTC Moica
-                </a>
-            </div>
-            
-            <div class="flex gap-x-12">
-                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Planos</a>
-                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Sobre</a>
-                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Contato</a>
-            </div>
+    <div class="flex h-20 items-center justify-between">
+        
+        <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 flex items-center gap-3 text-2xl font-black tracking-tighter text-yellow-400 uppercase group">
+                
+                <svg class="w-8 h-8 flex-shrink-0 transform transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 12.75C22.5 14.6 21.6 16.25 20.2 17.35L19 18.25V21C19 21.55 18.55 22 18 22H14C13.45 22 13 21.55 13 21V19C13 18.45 12.55 18 12 18H8.75C8.3 18 7.9 17.8 7.6 17.45L2.3 11.25C1.95 10.85 1.8 10.35 1.9 9.85C2.1 8.6 3.2 7.7 4.5 7.7H5V6C5 3.25 7.25 1 10 1H13.5C14.15 1 14.75 1.15 15.3 1.4L18.7 3.1C20.9 4.2 22.5 6.6 22.5 9.2V12.75ZM11 11H8V13H11V11Z"/>
+                </svg>
 
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-lg font-semibold leading-8 text-white border border-white px-4 py-1 rounded hover:bg-yellow-400 hover:text-blue-950 transition-colors">
-                    Entrar <span aria-hidden="true">&rarr;</span>
-                </a>
-            </div>
+                <span>CTC Moica</span>
+            </a>
         </div>
-    </nav>
+        
+        <div class="flex gap-x-12">
+            <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Planos</a>
+            <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Sobre</a>
+            <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Contato</a>
+        </div>
+
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-lg font-semibold leading-8 text-white border border-white px-4 py-1 rounded hover:bg-yellow-400 hover:text-blue-950 transition-colors">
+                Entrar <span aria-hidden="true">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</nav>
 </header>
     <main>
         {% block conteudo %}
