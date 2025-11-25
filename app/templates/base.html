@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock %}</title>
+    <link href="{% static 'output.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-[#0077b6]">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+      
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold tracking-tight text-amber-400">
+                    CTC Moica
+                </a>
+            </div>
+
+            <ul class="flex space-x-8">
+                <li>
+                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Planos</a>
+                </li>
+                <li>
+                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Sobre</a>
+                </li>
+                <li>
+                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Contato</a>
+                </li>
+                <li>
+                </li>
+            </ul>  
+            <button class="transition duration-700 ease-in-out bg-[#0096c7] hover:bg-[#00b4d8] text-white font-semibold py-2 px-6 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#00b4d8] focus:ring-opacity-75">
+            Entrar
+            </button>
+    </div>
+  </nav>
+    </header>
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+</body>
+</html>
