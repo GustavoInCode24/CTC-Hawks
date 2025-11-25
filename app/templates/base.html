@@ -8,35 +8,29 @@
     <link href="{% static 'output.css' %}" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-[#0077b6]">
-        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
-      
-            <div class="flex-shrink-0">
-                <a href="#" class="text-2xl font-bold tracking-tight text-amber-400">
+    <header class="bg-[#0F172A] text-white shadow-lg">
+    <nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Global">
+        <div class="flex h-20 items-center justify-between">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5 text-2xl font-black tracking-tighter text-yellow-400 uppercase">
                     CTC Moica
                 </a>
             </div>
+            
+            <div class="flex gap-x-12">
+                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Planos</a>
+                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Sobre</a>
+                <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-yellow-400 transition-colors">Contato</a>
+            </div>
 
-            <ul class="flex space-x-8">
-                <li>
-                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Planos</a>
-                </li>
-                <li>
-                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Sobre</a>
-                </li>
-                <li>
-                <a href="#" class="text-white hover:text-gray-200 transition-colors duration-200 font-semibold">Contato</a>
-                </li>
-                <li>
-                </li>
-            </ul>  
-            <button class="transition duration-700 ease-in-out bg-[#0096c7] hover:bg-[#00b4d8] text-white font-semibold py-2 px-6 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#00b4d8] focus:ring-opacity-75">
-            Entrar
-            </button>
-    </div>
-  </nav>
-    </header>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="text-lg font-semibold leading-8 text-white border border-white px-4 py-1 rounded hover:bg-yellow-400 hover:text-blue-950 transition-colors">
+                    Entrar <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
     <main>
         {% block conteudo %}
         {% endblock %}

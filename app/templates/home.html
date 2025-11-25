@@ -1,8 +1,36 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block titulo %} CTC Moica {% endblock %}
+{% block titulo %} CTC Moica - Home {% endblock %}
 
 {% block conteudo %}
-    <h1>Bem-vindo ao CTC Moica</h1>
-    <p class="font-bold">Exemplo</p>
+
+    <div class="relative isolate overflow-hidden pt-14 h-[85vh] flex items-center justify-center bg-black">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg" 
+             alt="Lutadores de Muay Thai" 
+             class="absolute inset-0 -z-10 h-full w-full object-cover opacity-50">
+        
+        <div class="mx-auto max-w-2xl text-center px-4">
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl uppercase drop-shadow-lg">
+                CTC Moica: <br> Onde <span class="text-yellow-400">Campeões</span> São Forjados
+            </h1>
+            
+            <p class="mt-6 text-lg font-semibold leading-8 text-gray-200 drop-shadow-md">
+                Treinos para todos os níveis, de iniciantes a atletas profissionais. Melhore sua saúde, técnica e confiança com nossa metodologia exclusiva.
+            </p>
+            
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="rounded-md bg-yellow-500 px-8 py-3.5 text-lg font-bold text-white shadow-sm hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400 transition-all hover:-translate-y-1">
+                    QUERO TREINAR
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10 text-center">
+        <h2 class="text-2xl font-bold">Nossas Modalidades</h2>
+        <p>Conteúdo extra aqui...</p>
+    </div>
+
 {% endblock %}
