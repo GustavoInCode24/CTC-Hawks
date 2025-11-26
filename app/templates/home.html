@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block titulo %} CTC Moica - Home {% endblock %}
+{% block titulo %} 
+    {{ pagina.nome_do_site|default:"CTC Moica" }} - Home 
+{% endblock %}
 
 {% block conteudo %}
 
@@ -13,7 +15,7 @@
         
         <div class="mx-auto max-w-2xl text-center px-4">
             <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl uppercase drop-shadow-lg">
-                CTC Moica: <br> Onde <span class="text-yellow-400">Campeões</span> São Forjados
+                {{ pagina.texto_chamada|default:"CTC Hawks" }}
             </h1>
             
             <p class="mt-6 text-lg font-semibold leading-8 text-gray-200 drop-shadow-md">
@@ -175,7 +177,7 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-base font-bold text-white">Endereço</h3>
-                            <p class="mt-1 text-gray-400">Av. Pres. Costa e Silva, 123<br>Boqueirão, Praia Grande - SP</p>
+                            <p class="mt-1 text-gray-400">{{ pagina.endereco|linebreaksbr|default:"Endereço não cadastrado" }}</p>
                         </div>
                     </div>
 

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block titulo %} Cadastro - CTC Moica {% endblock %}
+
+{% block conteudo %}
+<div class="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8 bg-slate-900">
+    
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <div class="mx-auto h-12 w-12 text-yellow-500 flex items-center justify-center">
+            {% if pagina.logo_do_site %}
+                    <img src="{{ pagina.logo_do_site.url }}" 
+                        alt="{{ pagina.nome_do_site }}" 
+                        class="h-12 w-auto object-contain">
+            {% endif %}
+        </div>
+        <h2 class="mt-6 text-center text-3xl font-black tracking-tighter text-white uppercase">
+            Crie sua conta
+        </h2>
+        <p class="mt-2 text-center text-sm text-gray-400">
+            Comece sua jornada no Muay Thai hoje
+        </p>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        
+        {% if form.errors %}
+            <div class="mb-6 rounded-md bg-red-500/10 p-4 ring-1 ring-inset ring-red-500/20 border-l-4 border-red-500">
+                <p class="text-sm font-bold text-red-400 mb-2">Atenção:</p>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <p class="text-xs text-red-300">• {{ field.label }}: {{ error }}</p>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <p class="text-xs text-red-300">• {{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form class="space-y-6" action="{% url 'salvarUsuario' %}" method="post">
+            {% csrf_token %}
+            
+            <div>
+                <label for="username" class="block text-sm font-bold leading-6 text-white">Nome de Usuário</label>
+                <div class="mt-2">
+                    <input type="text" name="username" id="username" required 
+                        class="block w-full rounded-md border-0 bg-white/5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-yellow-500 sm:text-sm sm:leading-6 pl-3 placeholder:text-gray-500"
+                        placeholder="Como gostaria de ser chamado?">
+                </div>
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-bold leading-6 text-white">E-mail</label>
+                <div class="mt-2">
+                    <input type="email" name="email" id="email" required 
+                        class="block w-full rounded-md border-0 bg-white/5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-yellow-500 sm:text-sm sm:leading-6 pl-3 placeholder:text-gray-500"
+                        placeholder="seu@email.com">
+                </div>
+            </div>
+
+            <div>
+                <label for="password1" class="block text-sm font-bold leading-6 text-white">Senha</label>
+                <div class="mt-2">
+                    <input type="password" name="password1" id="password1" required 
+                        class="block w-full rounded-md border-0 bg-white/5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-yellow-500 sm:text-sm sm:leading-6 pl-3">
+                </div>
+                <p class="mt-2 text-xs text-gray-400">
+                    Sua senha deve ter pelo menos <strong>8 caracteres</strong>.
+                </p>
+                <p class="mt-2 text-xs text-gray-400">
+                    Sua senha <strong>não pode conter suas informações pessoais </strong>.
+                </p>
+                <p class="mt-2 text-xs text-gray-400">
+                    Sua senha <strong>não pode ser inteiramente numérica</strong>.
+                </p>
+            </div>
+
+            <div>
+                <label for="password2" class="block text-sm font-bold leading-6 text-white">Confirmar Senha</label>
+                <div class="mt-2">
+                    <input type="password" name="password2" id="password2" required 
+                        class="block w-full rounded-md border-0 bg-white/5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-yellow-500 sm:text-sm sm:leading-6 pl-3">
+                </div>
+                <p class="mt-2 text-xs text-gray-400">
+                    Informe a mesma senha informada anteriormente <strong>para verificação</strong>.
+                </p>
+            </div>
+
+            <div>
+                <button type="submit" class="flex w-full justify-center rounded-md bg-yellow-500 px-3 py-2.5 text-sm font-bold leading-6 text-blue-950 shadow-sm hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 transition-transform hover:-translate-y-0.5 uppercase tracking-wide">
+                    Cadastrar
+                </button>
+            </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm text-gray-400">
+            Já tem uma conta?
+            <a href="{% url 'loginUsuario' %}" class="font-semibold leading-6 text-yellow-500 hover:text-yellow-400 ml-1 transition-colors">Faça login</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
