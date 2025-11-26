@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Loja Oficial - CTC Moica{% endblock %}
+
+{% block conteudo %}
+<div class="bg-gray-50 py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        
+        <div class="mx-auto max-w-2xl text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-blue-950 sm:text-4xl uppercase">Nossos Equipamentos</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Qualidade profissional para o seu treino.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            
+            {% for produto in produtos %}
+            <div class="group relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none group-hover:opacity-75 h-64">
+                    {% if produto.imagem_produto %}
+                        <img src="{{ produto.imagem_produto.url }}" alt="{{ produto.nome_produto }}" class="h-full w-full object-cover object-center">
+                    {% else %}
+                        <div class="flex items-center justify-center h-full bg-gray-100 text-gray-400">
+                            Sem imagem
+                        </div>
+                    {% endif %}
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">
+                                <a href="#">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    {{ produto.nome_produto }}
+                                </a>
+                            </h3>
+                            
+                            <p class="mt-1 text-sm text-gray-500">
+                                {{ produto.descricao_produto|truncatechars:50 }}
+                            </p>
+                        </div>
+                        
+                        <p class="text-lg font-medium text-yellow-600">
+                            R$ {{ produto.preco_produto }}
+                        </p>
+                    </div>
+                    
+                    <div class="mt-4 flex items-center justify-between">
+                        {% if produto.estoque_produto > 0 %}
+                            <p class="text-sm font-medium text-green-600 flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Em estoque: {{ produto.estoque_produto }}
+                            </p>
+                        {% else %}
+                            <p class="text-sm font-medium text-red-600 flex items-center">
+                                <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                                Esgotado
+                            </p>
+                        {% endif %}
+
+                        <button class="z-10 bg-blue-950 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-yellow-500 hover:text-blue-950 transition-colors">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
