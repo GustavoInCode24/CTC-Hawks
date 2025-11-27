@@ -118,8 +118,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root_coletados')
+
 STATICFILES_DIRS = [
-    BASE_DIR /'staticFiles'
+  os.path.join(BASE_DIR, 'staticFiles')
 ]
 
 # Default primary key field type
