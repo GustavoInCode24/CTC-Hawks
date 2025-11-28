@@ -116,6 +116,6 @@ Contribuições são sempre bem-vindas! Se você deseja colaborar com o projeto,
 ## 👥 Desenvolvedores e Contribuidores
 
 * **Gustavo Lemos De Oliveira**
-    - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GustavoInCode24)
+    - **GitHub:** [@GustavoInCode24](https://github.com/GustavoInCode24)
 * **Lucas Henrique Neves Sousa**
-    - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yonevxs)
+    - **GitHub:** [@yonevxs](https://github.com/yonevxs)
