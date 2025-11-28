@@ -24,11 +24,11 @@ Este projeto é baseado em uma *stack* tecnológica moderna e robusta, com ênfa
 | Categoria | Tecnologia | Badge |
 | :--- | :--- | :--- |
 | **Backend Framework** | **Django** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="40" height="40" alt="Django"/> |
-| **Controle de Versão** | **Git** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/>|
-| **Linguagem Principal** | **Python** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/> |
-| **Estilização (CSS)** | **Tailwind CSS** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="TailwindCSS"/> |
-| **Estrutura (HTML)** | **HTML5** |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/> |
-| **Banco de Dados** | **SQLite** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="40" height="40" alt="SQLite"/> |
+| **Controle de Versão** | **Git** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/>|
+| **Linguagem Principal** | **Python** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/> |
+| **Estilização (CSS)** | **Tailwind CSS** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="TailwindCSS"/> |
+| **Estrutura (HTML)** | **HTML5** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/> |
+| **Banco de Dados** | **SQLite** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="40" height="40" alt="SQLite"/> |
 
 ---
 
@@ -41,8 +41,6 @@ O projeto está totalmente funcional e hospedado na plataforma **PythonAnywhere*
 
 ### ☁️ Plataforma de Deploy
 O deploy foi realizado utilizando o **PythonAnywhere**, um serviço PaaS (Platform as a Service) que facilita a hospedagem de aplicações Python, como Django e Flask.
-
-![PythonAnywhere](https://img.shields.io/badge/PythonAnywhere-1880C7?style=for-the-badge&logo=pythonanywhere&logoColor=white)
 
 ---
 
@@ -115,12 +113,9 @@ Contribuições são sempre bem-vindas! Se você deseja colaborar com o projeto,
 
 ---
 
-## 👨‍💻 Autores
-
-Este projeto foi desenvolvido em colaboração por:
+## 👥 Desenvolvedores e Contribuidores
 
 * **Gustavo Lemos De Oliveira**
-    * GitHub: [GustavoInCode24](https://github.com/GustavoInCode24)
+    - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GustavoInCode24)
 * **Lucas Henrique Neves Sousa**
-    * GitHub: [yonevxs](https://github.com/yonevxs)
-
+    - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yonevxs)
