@@ -2,7 +2,7 @@
 
 ## 🚀 Visão Geral do Projeto
 
-O **CTC-Hawks PG** é uma aplicação web de gerenciamento e acompanhamento desenvolvida para otimizar a administração e o fluxo de dados de uma organização. A frase de efeito **"CTC Hawks: Onde campeões são forjados"** resume o propósito do sistema: fornecer a base estrutural e organizada necessária para o sucesso e o gerenciamento eficiente.
+O **CTC-Hawks** é uma aplicação web de gerenciamento e acompanhamento desenvolvida para otimizar a administração e o fluxo de dados de uma organização. A frase de efeito **"CTC Hawks: Onde campeões são forjados"** resume o propósito do sistema: fornecer a base estrutural e organizada necessária para o sucesso e o gerenciamento eficiente.
 
 O projeto foca em oferecer uma **interface de usuário intuitiva e segura**, construída para a **gestão de dados, relatórios e processos** essenciais à administração.
 
@@ -23,12 +23,12 @@ Este projeto é baseado em uma *stack* tecnológica moderna e robusta, com ênfa
 
 | Categoria | Tecnologia | Badge |
 | :--- | :--- | :--- |
-| **Backend Framework** | **Django** | ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) |
-| **Controle de Versão** | **Git** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) |
-| **Linguagem Principal** | **Python** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) |
-| **Estilização (CSS)** | **Tailwind CSS** | ![Tailwind CSS](https://img.shields.io/badge/tailwind%20css-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) |
-| **Estrutura (HTML)** | **HTML5** | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) |
-| **Banco de Dados** | **SQLite** | ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) |
+| **Backend Framework** | **Django** |<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="40" height="40" alt="Django"/> |
+| **Controle de Versão** | **Git** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/>|
+| **Linguagem Principal** | **Python** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/> |
+| **Estilização (CSS)** | **Tailwind CSS** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="TailwindCSS"/> |
+| **Estrutura (HTML)** | **HTML5** |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/> |
+| **Banco de Dados** | **SQLite** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="40" height="40" alt="SQLite"/> |
 
 ---
 
