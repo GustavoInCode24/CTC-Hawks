@@ -65,8 +65,10 @@ cd CTC-Hawks
 
 ```bash
 python -m venv venv
+
 # Ativação (Linux/macOS)
 source venv/bin/activate
+
 # Ativação (Windows)
 .\venv\Scripts\activate
 ````
@@ -83,18 +85,27 @@ pip install Django
 ```bash
 # Instalando todas as Dependências Python
 pip install -r requirements.txt
+
 # Instalando todas as Dependências TailWind CSS
 npm intall
 ````
 
-### 6. Configuração e Migração do Banco de Dados (Django)
+### 6. Crie um Super Usuario 
+
+```bash
+python manage.py createsuperuser
+````
+
+
+
+### 7. Configuração e Migração do Banco de Dados (Django)
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ````
 
-### 7. Execução do Servidor
+### 8. Execução do Servidor
 
 ```bash
 honcho start
