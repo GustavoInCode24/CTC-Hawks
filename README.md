@@ -73,7 +73,7 @@ source venv/bin/activate
 .\venv\Scripts\activate
 ````
 
-### 4. Instalando o Django
+### 4. Instale o Django
 
 ```bash
 pip install Django
