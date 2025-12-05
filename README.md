@@ -128,6 +128,6 @@ Contribuições são sempre bem-vindas! Se você deseja colaborar com o projeto,
 ## 👥 Desenvolvedores e Contribuidores
 
 * **Gustavo Lemos De Oliveira**
-    - **GitHub:** [@GustavoInCode24](https://github.com/GustavoLDO)
+    - **GitHub:** [@GustavoLDO](https://github.com/GustavoLDO)
 * **Lucas Henrique Neves Sousa**
     - **GitHub:** [@yonevxs](https://github.com/yonevxs)
